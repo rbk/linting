@@ -21,4 +21,4 @@ jobs:
       - run:
           name: "Lint Javascript"
           halt_build_on_fail: false
-          command: jshint --verbose ./**/*.js
+          command: jshint ./**/*.js
