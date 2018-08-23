@@ -16,15 +16,3 @@ jQuery(document).ready(function($) {
   go_to_test_page();
 
 });
-
-function hello() {
-  return "Hello!";
-}
-
-function goodbye(){
-  return "Goodbye!";
-}
-
-function goodDay() {
-  return "Good day to you!";
-}
