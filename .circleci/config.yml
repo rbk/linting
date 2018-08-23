@@ -8,7 +8,7 @@ jobs:
 
       - run:
           name: "Install PHP Dependencies"
-          command: composer install -n --prefer-dist
+          command: sh .circleci/phplint.sh
 
       - run:
           name: "Lint PHP"
@@ -20,4 +20,4 @@ jobs:
 
       - run:
           name: "Lint Javascript"
-          command: sh jshint.sh
+          command: sh .circleci/jshint.sh
