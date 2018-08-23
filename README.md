@@ -3,4 +3,9 @@
 - php
 - yaml
 - css
-- javascript 
+- javascript
+
+## JavaScript
+
+- Linter docs: http://jshint.com/docs/
+- Styleguide: http://contribute.jquery.org/style-guide/js/
