@@ -13,5 +13,6 @@ jQuery(document).ready(function($) {
   {
     window.location.href = "/test";
   }
+  go_to_test_page();
 
 });

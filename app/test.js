@@ -1,5 +1,11 @@
-function hello() {
-  return "Hello!";
-}
-
-hello()
+// function hello() {
+//   return "Hello!";
+// }
+//
+// function goodbye(){
+//   return "Goodbye!";
+// }
+//
+// function goodDay() {
+//   return "Good day to you!";
+// }
