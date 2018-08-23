@@ -1,1 +1,2 @@
-jshint ./**/*.js
+jshint lint.js
+jshint app/test.js
