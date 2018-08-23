@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-set -xe
-
-# Install Linters
-composer install -n --prefer-dist
-npm install -g jshint
-
-sh /scripts/cleanup

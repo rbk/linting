@@ -12,7 +12,7 @@ jobs:
 
       - run:
           name: "Lint PHP"
-          command: sh phplint.sh
+          command: sh .circleci/phplint.sh
 
       - run:
           name: "Install Javascript Linting Dependencies"

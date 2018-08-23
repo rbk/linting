@@ -20,8 +20,6 @@ RUN /scripts/install-node-tools
 RUN /scripts/install-php72
 RUN /scripts/install-composer
 
-RUN /scripts/install-linters
-
 # Show versions
 RUN node --version && \
     npm --version && \
