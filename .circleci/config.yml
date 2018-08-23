@@ -5,5 +5,11 @@ jobs:
       - image: richardbenjamin/ci
     steps:
       - checkout
-      - run: composer install -n --prefer-dist
-      - run: ./vendor/bin/phpcs --standard=ruleset.xml --extensions=php,inc,lib,theme . --ignore=*/vendor/*
+
+      - run:
+          name: "Install PHP Dependencies."
+          command: composer install -n --prefer-dist
+
+      - run:
+          name: "Lint PHP"
+          command: ./vendor/bin/phpcs --standard=ruleset.xml --extensions=php,inc,lib,theme . --ignore=*/vendor/*
