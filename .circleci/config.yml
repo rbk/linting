@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: richardbenjamin/ci
+    steps:
+      - checkout
+      - run: composer install -n --prefer-dist
+      - run: ./vendor/bin/phpcs --standard=ruleset.xml --extensions=php,inc,lib,theme . --ignore=*/vendor/*
