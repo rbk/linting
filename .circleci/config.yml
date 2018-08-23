@@ -8,11 +8,11 @@ jobs:
 
       - run:
           name: "Install PHP Dependencies"
-          command: sh .circleci/phplint.sh
+          command: composer install -n --prefer-dist
 
       - run:
           name: "Lint PHP"
-          command: ./vendor/bin/phpcs --standard=ruleset.xml --extensions=php,inc,lib,theme . --ignore=*/vendor/*
+          command: sh phplint.sh
 
       - run:
           name: "Install Javascript Linting Dependencies"
