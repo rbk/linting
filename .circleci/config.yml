@@ -13,3 +13,11 @@ jobs:
       - run:
           name: "Lint PHP"
           command: ./vendor/bin/phpcs --standard=ruleset.xml --extensions=php,inc,lib,theme . --ignore=*/vendor/*
+
+      - run:
+          name: "Install Javascript Linting Dependencies."
+          command: npm install -g jshint
+          
+      - run:
+          name: "Lint Javascript"
+          command: jshint --verbose .
